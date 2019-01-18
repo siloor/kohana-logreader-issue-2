@@ -1,0 +1,9 @@
+version: '3'
+services:
+  kohana :
+    container_name: kohana
+    image: php:5.6.40-apache-stretch
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
